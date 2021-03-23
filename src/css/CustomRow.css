@@ -1,0 +1,22 @@
+.customRow {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.customRow > h4 {
+  font-size: 22px;
+  font-weight: 800;
+  padding: 10px;
+  color: #2e81f4;
+}
+
+.customRow > .MuiSvgIcon-root {
+  font-size: xx-large;
+  color: #2e81f4;
+}
+
+.customRow:hover > .MuiSvgIcon-root {
+  color: black;
+}

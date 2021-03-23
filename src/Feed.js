@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Feed.css";
+import "./css/Feed.css";
 import StoryReel from "./StoryReel";
 import MessageSender from "./MessageSender";
 import Post from "./Post";
@@ -14,9 +14,11 @@ function Feed() {
      and pull it into the code.
   */
   useEffect(() => {
-    db.collection("posts").onSnapshot((snapshot) =>
-      setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
-    );
+    db.collection("posts")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
+      );
   }, []);
 
   return (

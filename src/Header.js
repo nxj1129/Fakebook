@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./css/Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import FlagIcon from "@material-ui/icons/Flag";
@@ -48,7 +48,7 @@ function Header() {
 
       <div className="header__right">
         <div className="header__info">
-          <Avatar src={user.photoUrl} />
+          <Avatar src={user.photoURL} />
           <h4>{user.displayName}</h4>
         </div>
 

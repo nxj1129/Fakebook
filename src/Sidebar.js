@@ -1,6 +1,7 @@
 import React from "react";
-import "./Sidebar.css";
+import "./css/Sidebar.css";
 import SidebarRow from "./SidebarRow";
+import CustomRow from "./CustomRow";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import EmojiFlagsIcon from "@material-ui/icons/EmojiFlags";
 import PeopleIcon from "@material-ui/icons/People";
@@ -9,6 +10,8 @@ import StorefrontIcon from "@material-ui/icons/Storefront";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreOutlined from "@material-ui/icons/ExpandMore";
 import { useStateValue } from "./StateProvider";
+import WbSunnyIcon from "@material-ui/icons/WbSunny";
+import NightsStayIcon from "@material-ui/icons/NightsStay";
 
 function Sidebar() {
   const [{ user }, dispatch] = useStateValue();
@@ -26,6 +29,10 @@ function Sidebar() {
       <SidebarRow Icon={StorefrontIcon} title="Marketplace" />
       <SidebarRow Icon={VideoLibraryIcon} title="Videos" />
       <SidebarRow Icon={ExpandMoreOutlined} title="Friends" />
+      <div className="brightness">
+        <CustomRow Icon={WbSunnyIcon} />
+        <CustomRow Icon={NightsStayIcon} />
+      </div>
     </div>
   );
 }

@@ -1,11 +1,10 @@
 import React from "react";
 import Story from "./Story";
-import "./StoryReel.css";
+import "./css/StoryReel.css";
 
 function StoryReel() {
   return (
     <div className="storyReel">
-      {/* Story */}
       <Story
         image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-x1oForgN-5U%2FUrdhZNzWIgI%2FAAAAAAAAoj4%2FbrKrimAoxE8%2Fs1600%2FRocky%2BIII%2Bposter%2B2.jpg&f=1&nofb=1"
         profileSrc="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsites.psu.edu%2Fconnorzimmerman%2Fwp-content%2Fuploads%2Fsites%2F4939%2F2014%2F04%2F091910rocky_fanart2.png&f=1&nofb=1"

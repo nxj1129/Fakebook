@@ -1,0 +1,15 @@
+.sidebar {
+  padding: 25px 10px;
+  flex: 0.33;
+}
+
+.brightness {
+  display: flex;
+  align-items: center;
+}
+
+.brightness > h4 {
+  font-weight: 800;
+  font-size: small;
+  color: #2e81f4;
+}

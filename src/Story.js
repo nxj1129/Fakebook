@@ -1,5 +1,5 @@
 import React from "react";
-import "./Story.css";
+import "./css/Story.css";
 import { Avatar } from "@material-ui/core";
 
 function Story({ image, profileSrc, title }) {
